@@ -1,0 +1,20 @@
+// abstracts/_mixins.scss
+@use 'variables' as *;
+
+@mixin col-span($cols) {
+  width: calc((100% / #{$grid-columns}) * #{$cols});
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin respond-to($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}

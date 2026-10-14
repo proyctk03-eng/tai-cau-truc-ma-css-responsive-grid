@@ -1,0 +1,21 @@
+{
+  "name": "tai-cau-truc-ma-css-responsive-grid",
+  "version": "1.0.0",
+  "description": "[Bài tập] Tái cấu trúc mã CSS cho sẵn (codegym-vn/responsive-grid) sang SASS",
+  "main": "index.html",
+  "scripts": {
+    "build:sass": "sass main.scss main.css",
+    "watch:sass": "sass main.scss main.css --watch"
+  },
+  "keywords": [
+    "sass",
+    "scss",
+    "responsive-grid",
+    "codegym"
+  ],
+  "author": "Nguyen Tuan Dat",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.80.0"
+  }
+}

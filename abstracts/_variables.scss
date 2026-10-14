@@ -1,0 +1,14 @@
+// abstracts/_variables.scss
+$color-header: #9933cc;
+$color-footer: #0099cc;
+$color-item: #33b5e5;
+$color-grid-bg: #f1f1f1;
+$color-white: #ffffff;
+$color-border: grey;
+$color-dark-border: #000000;
+
+$grid-columns: 12;
+$column-width: calc(100% / #{$grid-columns}); // 8.3333%
+
+$breakpoint-mobile: 600px;
+$breakpoint-tablet: 768px;

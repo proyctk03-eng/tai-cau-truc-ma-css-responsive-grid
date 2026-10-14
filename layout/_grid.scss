@@ -1,0 +1,101 @@
+// layout/_grid.scss
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.gridcontainer {
+  width: 100%;
+  position: relative;
+
+  &.layout-overlay {
+    position: absolute;
+    opacity: 0.95;
+    left: 8px;
+    right: 10px;
+    width: auto;
+    z-index: 2;
+  }
+
+  &.grid-background {
+    opacity: 0.15;
+    z-index: 1;
+  }
+}
+
+.gridwrapper {
+  overflow: auto;
+  position: relative;
+  width: 100%;
+  @include clearfix;
+
+  &--header {
+    height: 90px;
+  }
+
+  &--main {
+    height: 230px;
+  }
+
+  &--footer {
+    height: 50px;
+  }
+
+  &--bg-overlay {
+    height: 370px;
+  }
+}
+
+.gridcontent {
+  width: $column-width;
+  margin: 0;
+  border-right: 1px solid $color-border;
+  height: 100%;
+  float: left;
+  background-color: $color-grid-bg;
+
+  &--full {
+    width: 100%;
+    border-right-color: transparent;
+  }
+
+  &--header {
+    background-color: $color-header;
+  }
+
+  &--footer {
+    background-color: $color-footer;
+  }
+
+  &--white {
+    background-color: $color-white;
+    border: none;
+  }
+
+  &--col-3 {
+    @include col-span(3); // 25%
+    padding-top: 15px;
+  }
+
+  &--border-black {
+    border-right: 1px solid $color-dark-border;
+    background-color: $color-white;
+
+    &:first-child {
+      border-left: 1px solid $color-dark-border;
+    }
+  }
+}
+
+.item-block {
+  background-color: $color-item;
+  border: none;
+  width: 100%;
+
+  &--menu {
+    height: 15%;
+    margin-bottom: 10px;
+  }
+
+  &--sidebar {
+    height: 92%;
+  }
+}

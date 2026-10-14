@@ -1,0 +1,5 @@
+// main.scss - Tái cấu trúc mã CSS Responsive Grid sang SASS
+@use "abstracts/variables" as *;
+@use "abstracts/mixins" as *;
+@use "base/reset" as *;
+@use "layout/grid" as *;
